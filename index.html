@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'"
+		/>
+		<meta
+			http-equiv="X-Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'"
+		/>
+		<title>Chat to Jira</title>
+    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+    
+    <form class="form__container">
+      <h1 class="text__center">Welcome to Chat to Jira</h1>
+      <div class="form__group">
+        <textarea
+          id="chat"
+          class="form__field"
+          placeholder="Enter the text that contains jira tickets"
+          rows="10"
+          name="chat"
+        ></textarea>
+        <label for="message" class="form__label">Enter the text that contains jira tickets</label>
+      </div>
+      <button type="submit" id="submit" class="btn">Open tickets in browser</button>
+    </form>
+	</body>
+	<script src="js/process.js"></script>
+</html>
