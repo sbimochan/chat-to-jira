@@ -1,0 +1,30 @@
+{
+  "name": "chat-to-jira-opener",
+  "version": "1.0.0",
+  "description": "Open jira tickets in new browser tab from message",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbimochan/chat-to-jira-opener.git"
+  },
+  "keywords": [
+    "jira",
+    "extension",
+    "ticket-id"
+  ],
+  "author": "Bimochan Shrestha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sbimochan/chat-to-jira-opener/issues"
+  },
+  "homepage": "https://github.com/sbimochan/chat-to-jira-opener#readme",
+  "devDependencies": {
+    "electron": "^15.0.0"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
