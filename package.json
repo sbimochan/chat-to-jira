@@ -1,5 +1,6 @@
 {
-  "name": "chat-to-jira-opener",
+  "name": "chat-to-jira",
+  "productName": "Chat to Jira",
   "version": "1.0.0",
   "description": "Open jira tickets in new browser tab from message",
   "main": "index.js",
@@ -10,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sbimochan/chat-to-jira-opener.git"
+    "url": "git+https://github.com/sbimochan/chat-to-jira.git"
   },
   "keywords": [
     "jira",
@@ -20,16 +21,17 @@
   "author": "Bimochan Shrestha",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sbimochan/chat-to-jira-opener/issues"
+    "url": "https://github.com/sbimochan/chat-to-jira/issues"
   },
-  "homepage": "https://github.com/sbimochan/chat-to-jira-opener#readme",
+  "homepage": "https://github.com/sbimochan/chat-to-jira#readme",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.61",
     "@electron-forge/maker-deb": "^6.0.0-beta.61",
     "@electron-forge/maker-rpm": "^6.0.0-beta.61",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
     "@electron-forge/maker-zip": "^6.0.0-beta.61",
-    "electron": "^15.0.0"
+    "electron": "^15.0.0",
+    "electron-packager": "^15.4.0"
   },
   "dependencies": {
     "electron-reload": "^2.0.0-alpha.1",
@@ -37,12 +39,14 @@
   },
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "./public/ticket.icns"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "chat_to_jira_opener"
+            "name": "Chat to Jira"
           }
         },
         {

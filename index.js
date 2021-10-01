@@ -16,6 +16,7 @@ function createWindow() {
 			nodeIntegration: true,
 			contextIsolation: false,
 		},
+		icon: __dirname + "./public/ticket.icns",
 	});
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 	// and load the index.html of the app.
