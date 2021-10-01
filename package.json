@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/sbimochan/chat-to-jira-opener#readme",
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.61",
     "electron": "^15.0.0"
   },
   "dependencies": {
